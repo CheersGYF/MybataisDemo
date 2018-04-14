@@ -1,0 +1,187 @@
+2018-03-06 10:19:27,546-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:19:27,594-[TS] INFO main test.TestICourceDao - 此课程不存在！
+   2018-03-06 10:19:27,738-[TS] INFO main test.TestICourceDao - 此课程不存在！
+   2018-03-06 10:19:27,938-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:19:28,167-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 10:22:43,189-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:22:43,191-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 10:19:28 CST 2018
+   2018-03-06 10:22:43,265-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 10:22:43,356-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 10:22:43,424-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:22:43,481-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 10:44:08,921-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:44:08,923-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 10:22:43 CST 2018
+   2018-03-06 10:44:08,976-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 10:44:09,042-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 10:44:09,119-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:44:09,293-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 10:45:37,664-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:45:37,666-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 10:44:09 CST 2018
+   2018-03-06 10:45:37,733-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 10:45:37,833-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 10:45:37,902-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:45:37,974-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 10:54:17,058-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:54:17,059-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 10:45:37 CST 2018
+   2018-03-06 10:54:17,224-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 10:54:17,307-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 10:54:17,401-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 10:54:17,499-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 11:56:43,278-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 11:56:43,280-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 10:54:17 CST 2018
+   2018-03-06 11:56:43,346-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 11:56:43,404-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 11:56:43,472-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 11:56:43,537-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 11:58:25,799-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 11:58:25,801-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 11:56:43 CST 2018
+   2018-03-06 11:58:25,856-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 11:58:25,915-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 11:58:25,966-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 11:58:26,023-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 11:58:55,060-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 11:58:55,062-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 11:58:26 CST 2018
+   2018-03-06 11:58:55,413-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 11:58:55,687-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 11:58:55,788-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 11:58:55,845-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 14:54:31,275-[TS] INFO main test.TestIStudentDao - 学生信息新增成功！
+   2018-03-06 16:35:10,308-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 16:35:10,309-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 11:58:55 CST 2018
+   2018-03-06 16:35:10,444-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 16:35:10,644-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 16:35:10,736-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 16:35:10,810-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 16:35:10,905-[TS] INFO main test.TestICourceDao - mybatis入门指南
+   2018-03-06 16:35:10,905-[TS] INFO main test.TestICourceDao - mybatis实战
+   2018-03-06 16:39:34,277-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 16:39:34,278-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 16:35:10 CST 2018
+   2018-03-06 16:39:34,350-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 16:39:34,442-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 16:39:34,501-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 16:39:34,567-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 16:40:20,939-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 16:40:20,941-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 16:39:34 CST 2018
+   2018-03-06 16:40:21,005-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 16:40:21,214-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 16:40:21,360-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 16:40:21,489-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 16:40:21,634-[TS] INFO main test.TestICourceDao - mybatis入门指南
+   2018-03-06 16:40:32,395-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 16:40:32,396-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 16:40:21 CST 2018
+   2018-03-06 16:40:32,453-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 16:40:32,553-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 16:40:32,604-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 16:40:32,678-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 16:40:32,748-[TS] INFO main test.TestICourceDao - mybatis实战
+   2018-03-06 17:02:21,492-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 17:02:21,494-[TS] INFO main test.TestICourceDao - cource002,mybatis实战,4,Tue Mar 06 16:40:32 CST 2018
+   2018-03-06 17:02:21,571-[TS] INFO main test.TestICourceDao - 修改课程成功！
+   2018-03-06 17:02:21,646-[TS] INFO main test.TestICourceDao - 删除课程成功！
+   2018-03-06 17:02:21,705-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 17:02:21,779-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 17:02:44,315-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 17:02:44,317-[TS] INFO main test.TestICourceDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-06 17:02:44,375-[TS] INFO main test.TestICourceDao - 此课程不存在！
+   2018-03-06 17:02:44,492-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 17:02:44,608-[TS] INFO main test.TestICourceDao - 新增课程失败！
+   org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 违反唯一约束条件 (SCOTT.PK_COURCE)
+
+### The error may involve com.neuedu.mybatisdemo.dao.ICourceDao.addCource-Inline
+### The error occurred while setting parameters
+### SQL: insert into cource(cource_id,cource_name,cource_score,start_date)     values(?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 违反唯一约束条件 (SCOTT.PK_COURCE)
+
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy7.addCource(Unknown Source)
+	at test.TestICourceDao.testAddCource(TestICourceDao.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 违反唯一约束条件 (SCOTT.PK_COURCE)
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:439)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:395)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:802)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:436)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:186)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:521)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:205)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1008)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1307)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3449)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3550)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1374)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 30 more
+2018-03-06 17:03:17,941-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 17:03:17,943-[TS] INFO main test.TestICourceDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-06 17:03:17,985-[TS] INFO main test.TestICourceDao - 此课程不存在！
+   2018-03-06 17:03:18,062-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 17:03:18,150-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 17:04:01,693-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 17:04:01,695-[TS] INFO main test.TestICourceDao - cource003,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-06 17:04:01,695-[TS] INFO main test.TestICourceDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-06 17:04:01,744-[TS] INFO main test.TestICourceDao - 此课程不存在！
+   2018-03-06 17:04:01,794-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 17:04:01,976-[TS] INFO main test.TestICourceDao - 增加课程成功！
+   2018-03-06 17:20:01,018-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-06 17:20:01,020-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-06 17:21:15,887-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-06 17:21:15,888-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-06 17:21:33,654-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-06 17:21:33,656-[TS] INFO main test.TestIStudentDao - 6,wanger,123456,wanger
+   2018-03-06 17:21:33,656-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-06 17:21:33,656-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-06 17:41:16,315-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-06 17:41:16,316-[TS] INFO main test.TestIStudentDao - 6,wanger,123456,wanger
+   2018-03-06 17:41:16,316-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-06 17:41:16,317-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-06 18:02:07,487-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 18:02:07,489-[TS] INFO main test.TestICourceDao - cource003,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-06 18:02:07,489-[TS] INFO main test.TestICourceDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-06 18:02:07,489-[TS] INFO main test.TestICourceDao - cource002,mybatis实战-v.,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-06 18:02:14,475-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-06 18:02:14,477-[TS] INFO main test.TestIStudentDao - 6,wanger,123456,wanger
+   2018-03-06 18:02:14,477-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-06 18:02:14,477-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-06 18:04:03,527-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-06 18:04:03,529-[TS] INFO main test.TestICourceDao - cource003,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-06 18:04:03,529-[TS] INFO main test.TestICourceDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-06 18:04:03,529-[TS] INFO main test.TestICourceDao - cource002,mybatis实战-v.,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-06 18:46:43,511-[TS] INFO main test.TestIStudentDao - 学生信息新增成功！
+   2018-03-06 18:52:35,492-[TS] INFO main test.TestIStudentDao - 学生信息修改成功！
+   2018-03-06 18:55:45,395-[TS] INFO main test.TestIStudentDao - 学生信息删除成功！
+   

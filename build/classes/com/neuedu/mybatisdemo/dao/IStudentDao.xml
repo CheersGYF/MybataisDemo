@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- mybatis接口映射文件，用于映射接口的操作，
+	mybatis会根据配置文件的配置实现数据的操作 -->
+<!-- mybatis 有两个配置文件，一个是全局配置文件一个是接口映射文件
+接口映射文件需要使用接口文档映射定义-->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+ <mapper namespace="com.neuedu.mybatisdemo.dao.IStudentDao">
+ 	
+ 	<!-- 使用序列管理表格组件时，如何插入数据 -->
+ 	<insert id="addStudent" parameterType="student" >
+ 	<selectKey keyColumn="id" keyProperty="id" order="BEFORE" resultType="int">
+ 		select tab_student.nextval as id from dual
+ 	</selectKey>
+ 		insert into student1 (id,account,password,truename) 
+ 		values(#{id},#{account},#{password},#{truename})
+ 	</insert>
+ 	<!-- 
+ 	insert into student1 (id,account,password,truename) 
+ 		values(${id},'${account}','${password}','${truename}')
+ 	mybatis配置参数的获取使用${} ,sql里面的参数使用#{}，${}
+ 	在sql使用#{}和${}获取对象参数的异同点：
+ 	mybatis配置文件当中的#{}和${}的异同点
+ 	-->
+ 	<update id="editStudent" parameterType="student" >
+ 		update student1 set account=#{account},password=#{password},truename=#{truename}
+ 		where id=#{id}
+ 	</update>
+ 	
+ 	<delete id="deleteStudent" parameterType="int">
+ 		delete student1 where id=#{id} 
+ 	</delete>
+ 	
+ 	<resultMap type="Student" id="studentMap">
+ 	<!-- 使用构造方法进行数据保存和映射转换 注意：不指定参数类顺序不能打乱 -->
+ 		<constructor>
+ 			<idArg column="id" javaType="_int"/>
+ 			<arg column="account" javaType="String"/>
+ 			<arg column="password" javaType="String"/>
+ 			<arg column="truename" javaType="String"/>
+ 		</constructor>
+ 		<!-- 调用set方法完成数据的保存和映射转换 -->
+ 		<!-- <id column="id" property="id"/>
+ 		<result column="account" property="account"/>
+ 		<result column="password" property="password"/>
+ 		<result column="truename" property="truename"/> -->
+ 		<!-- 关系映射 -->
+ 		<collection property="cources" ofType="Cource">
+ 			<id column = "cource_id" property="courceId"/>
+ 			<result column="cource_name" property="courceName"/> 
+ 			<result column="cource_score" property="courceScore"/> 
+ 			<result column="start_date" property="startDate"/> 
+ 		</collection>
+ 	</resultMap>
+ 	
+ 	<sql id="fromsql">
+ 		student1 s left outer join tab_student_cource t on s.id=t.student_id
+       left outer join cource c on t.cource_id = c.cource_id
+ 	</sql>
+ 	<sql id="fromRsql">
+ 		student1 s right outer join tab_student_cource t on s.id=t.student_id
+       right outer join cource c on t.cource_id = c.cource_id
+ 	</sql>
+ 	<select id ="findAll" resultMap="studentMap">
+ 	<!-- sql中进行的数据库的表关联查询；在使用mybatis时，需要进行关联关系的映射-relation mapping  -->
+ 	select c.*,s.* from
+ 	<include refid="fromsql"></include>
+ 	</select>
+ 	<!-- 对象映射 -->
+ 	<resultMap type="Student" id="studentMap2">
+ 		<id column="id" property="id"/>
+ 		<result column="account" property="account"/>
+ 		<result column="password" property="password"/>
+ 		<result column="truename" property="truename"/>
+ 		<!-- 联系信息做关联映射,一对一进行关联 -->
+ 		<association property="contactInfo" javaType="ContactInfo">
+ 			<id column="student_id" property="studentId"/>
+ 			<result column="qq" property="qq"/>
+ 			<result column="email" property="email"/>
+ 		</association>
+ 	</resultMap>
+ 	
+ 	<select id ="findAllInfo" resultMap="studentMap2">
+ 		select * from student1 s left join contact_info c on s.id=c.student_id
+ 	
+ 	</select>
+ 	<!-- 关联查询的第二种方法，两次查询 -->
+ 	<!-- 对象映射 -->
+ 	<resultMap type="Student" id="studentMap3">
+ 		<id column="id" property="id"/>
+ 		<result column="account" property="account"/>
+ 		<result column="password" property="password"/>
+ 		<result column="truename" property="truename"/>
+ 		<!-- 当关联的数据没有在sql中没有查询出来的时候，可以使用select 配置关联查询 (二次查询)-->
+ 		<association property="contactInfo" column="id" javaType="ContactInfo" select="selectContactById"/>
+ 		<!-- 一对多关联查询返回集合，需要配置property=student类中的List变量，配置javaType为“ArrayList”，
+ 		配置一个ofType属性为Cource类，在select标签中配置resultType="Cource"实体类型 -->
+ 		<collection property="cources" column="id" javaType="ArrayList" ofType="Cource" select="selectCourceById"/>
+ 	</resultMap> 
+ 	<!-- 在某种情况下select的参数类型是可以省略的  如：参数是_int 类型，-->
+ 	<!--  -->
+ 	<select id="selectContactById" parameterType="_int" resultType="contactInfo">
+ 		<!-- 在某些情况下参数的变量名可以任意命名，如：只有一个参数时 -->
+ 			select student_id as studentId,qq,email from contact_info where student_id=#{id}
+ 	</select>
+ 	
+ 	<select id="selectCourceById" parameterType="_int" resultType="Cource">
+ 		select c.cource_id courceId,cource_name courceName,cource_score courceScore,start_date startDate 
+ 		from cource c,tab_student_cource t 
+ 		where t.cource_id=c.cource_id and t.student_id=#{id}
+ 	</select>
+ 	<select id="findById" parameterType="_int" resultMap="studentMap3">
+ 	select * from student1 where id=#{id}
+ 	</select>
+ 	
+ 	<!-- 多条件查询和模糊查询，分页查询(插件)，批量操作，批量新增、修改删除 ，缓存-->
+ </mapper>
+  
+  

@@ -1,0 +1,91 @@
+2018-03-07 10:57:25,214-[TS] INFO main test.TestIStudentDao - 学生信息删除失败！
+   2018-03-07 10:57:52,158-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:19:38,646-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:19:38,647-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:19:38,648-[TS] INFO main test.TestIStudentDao - 6,li5,3968369,李四
+   2018-03-07 11:19:38,648-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:20:21,698-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:20:21,699-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:20:21,700-[TS] INFO main test.TestIStudentDao - 6,li5,3968369,李四
+   2018-03-07 11:20:21,700-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:39:41,385-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:39:41,389-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:39:41,389-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:39:41,389-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:39:41,389-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:39:41,389-[TS] INFO main test.TestIStudentDao - 6,li5,3968369,李四
+   2018-03-07 11:39:41,390-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:44:03,372-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:44:03,375-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:44:03,375-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:44:03,376-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:44:03,376-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:44:03,376-[TS] INFO main test.TestIStudentDao - 6,li5,3968369,李四
+   2018-03-07 11:44:03,376-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:44:03,376-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:44:20,445-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:44:20,449-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:44:20,449-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:44:20,449-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:44:20,449-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:44:20,450-[TS] INFO main test.TestIStudentDao - 6,li5,3968369,李四
+   2018-03-07 11:44:20,450-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:44:20,450-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:45:24,585-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:45:24,589-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:45:24,589-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:45:24,589-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:45:24,589-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:45:24,590-[TS] INFO main test.TestIStudentDao - 6,li5,3968369,李四
+   2018-03-07 11:45:24,590-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:45:24,590-[TS] INFO main test.TestIStudentDao - null,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:46:22,159-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:46:22,163-[TS] INFO main test.TestIStudentDao - cource003,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:46:22,163-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:46:22,163-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:46:22,163-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:46:22,163-[TS] INFO main test.TestIStudentDao - 6,li5,3968369,李四
+   2018-03-07 11:46:22,163-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:46:22,164-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:53:58,322-[TS] INFO main test.TestIStudentDao - 0,null,null,null
+   2018-03-07 11:53:58,327-[TS] INFO main test.TestIStudentDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-07 11:53:58,327-[TS] INFO main test.TestIStudentDao - 0,null,null,null
+   2018-03-07 11:53:58,327-[TS] INFO main test.TestIStudentDao - cource002,mybatis实战-v.,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:53:58,328-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:53:58,328-[TS] INFO main test.TestIStudentDao - cource003,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:53:58,328-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:53:58,328-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:53:58,328-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:53:58,328-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:53:58,328-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:55:10,576-[TS] INFO main test.TestIStudentDao - 0,null,null,null
+   2018-03-07 11:55:10,580-[TS] INFO main test.TestIStudentDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-07 11:55:10,580-[TS] INFO main test.TestIStudentDao - 0,null,null,null
+   2018-03-07 11:55:10,580-[TS] INFO main test.TestIStudentDao - cource002,mybatis实战-v.,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:55:10,580-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:55:10,580-[TS] INFO main test.TestIStudentDao - cource003,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:55:10,581-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:55:10,581-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:55:10,581-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:55:10,581-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:55:10,581-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:56:12,976-[TS] INFO main test.TestIStudentDao - 0,null,null,null
+   2018-03-07 11:56:13,114-[TS] INFO main test.TestIStudentDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-07 11:56:13,115-[TS] INFO main test.TestIStudentDao - 0,null,null,null
+   2018-03-07 11:56:13,116-[TS] INFO main test.TestIStudentDao - cource002,mybatis实战-v.,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:56:13,117-[TS] INFO main test.TestIStudentDao - 2,zhangsan,123456,张三
+   2018-03-07 11:56:13,119-[TS] INFO main test.TestIStudentDao - cource003,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 11:56:13,120-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:56:13,120-[TS] INFO main test.TestIStudentDao - 5,lisi,123456,李四
+   2018-03-07 11:56:13,121-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 11:56:13,121-[TS] INFO main test.TestIStudentDao - 7,wsl,123456,sdf
+   2018-03-07 11:56:13,122-[TS] INFO main test.TestIStudentDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 12:11:59,419-[TS] INFO main test.TestICourceDao - couce001,mybatis入门指南,3,Mon Mar 05 11:18:02 CST 2018
+   2018-03-07 12:11:59,421-[TS] INFO main test.TestICourceDao - cource002,mybatis实战-v.,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 12:11:59,421-[TS] INFO main test.TestICourceDao - cource003,mybatis实战-v0,4,Sat Mar 10 00:00:00 CST 2018
+   2018-03-07 12:11:59,421-[TS] INFO main test.TestICourceDao - 2,zhangsan,123456,张三
+   2018-03-07 12:11:59,421-[TS] INFO main test.TestICourceDao - cource004,mybatis实战-v1,4,Mon Mar 12 00:00:00 CST 2018
+   2018-03-07 12:11:59,421-[TS] INFO main test.TestICourceDao - 5,lisi,123456,李四
+   2018-03-07 12:11:59,421-[TS] INFO main test.TestICourceDao - 7,wsl,123456,sdf
+   2018-03-07 12:11:59,421-[TS] INFO main test.TestICourceDao - 2,zhangsan,123456,张三
+   

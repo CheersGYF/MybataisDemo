@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 这是mybatis全局配置文件用于进行mybatis配置 -->
+<!--使用全局文档类型定义约束全局文档可以配置的标签和每个标签可以配置的属性：DTD 文档类型定义 -->
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+<configuration>
+	<!-- prorerties 用于统一配置全局属性 ,为了是配置信息易于维护-->
+	<properties resource="config/grobal.properties">
+		<!--
+		<property name="p_driver" value="oracle.jdbc.driver.OracleDriver"/>
+		<property name="p_url" value="jdbc:oracle:thin://localhost:1521/orcl"/>
+	    <property name="p_username" value="scott"/>
+	    <property name="p_password" value="tiger"/>
+	    -->
+	</properties>
+	<typeAliases>
+	<!-- 针对pojo类可以在全局配置文件中配置类型别名，在接口文件中可以使用别名简化配置 -->
+	<!-- 在mybatis对多个java类型提供类内建别名 ，且别名大小写不敏感，详情察看api-->
+	<!-- mybatis的别名是通过类型处理类进行类型转换的，mybatis提供了复杂类型的自定义转换接口进行类型扩展 -->
+		<!-- <typeAlias type="com.neuedu.mybatisdemo.bean.Cource" alias="Cource"/>-->
+	<!-- 如果配置的别名很多，可以使用package进行简化配置，配置pojo类的所有package包就行 -->
+	<package name="com.neuedu.mybatisdemo.bean"/>
+	</typeAliases>
+	<!-- typeHandlers用于配置类型转换器，别名就是通过类型转换类把java类型互换成数据类型 -->
+	
+	<!-- 配置mybatis的运行环境（全局） -->
+	<environments default="development">
+	    <environment id="development">
+	    <!-- 配置事务管理器 -->
+	      <transactionManager type="JDBC"/>
+	      <!-- 配置jdbc的4个参数 -->
+	      <!--  
+	      <dataSource type="POOLED">
+	        <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+	        <property name="url" value="jdbc:oracle:thin://localhost:1521/orcl"/>
+	        <property name="username" value="scott"/>
+	        <property name="password" value="tiger"/>
+	      </dataSource>
+	      -->
+	      <dataSource type="POOLED">
+	        <property name="driver" value="${p_driver}"/>
+	        <property name="url" value="${p_url}"/>
+	        <property name="username" value="${p_username}"/>
+	        <property name="password" value="${p_password}"/>
+	      </dataSource>
+	    </environment>
+	</environments>
+    <mappers>
+    	<!-- 关联mybatis的接口映射文件 -->
+    	<!-- 1.使用内路径的相对路径进行配置 使用mapper resource.xml进行配置 
+    	<mapper resource="com/neuedu/mybatisdemo/dao/ICourceDao.xml"/>-->
+    	<!-- 2.使用全文件路径进行配置，配置mapper url.xml 
+    	<mapper url="file:///E:\\neuedu8workspace\\mybatisDemo\\src\\com\\neuedu\\mybatisdemo\\dao\\ICourceDao.xml"/>
+    	-->
+    	<!-- 3.使用mapper映射接口类进行配置
+    	<mapper class="com.neuedu.mybatisdemo.dao.ICourceDao"/> -->
+    	<!-- 4.使用mapper接口所在package包，简化配置 -->
+    	<package name="com.neuedu.mybatisdemo.dao"/>
+    </mappers>
+  
+</configuration>

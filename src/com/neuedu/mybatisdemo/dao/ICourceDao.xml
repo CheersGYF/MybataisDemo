@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- mybatis接口映射文件，用于映射接口的操作，
+	mybatis会根据配置文件的配置实现数据的操作 -->
+<!-- mybatis 有两个配置文件，一个是全局配置文件一个是接口映射文件
+接口映射文件需要使用接口文档映射定义-->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- 
+  	在mapper映射文件中，使用mapper标签进行实现接口映射，使用namespace指定要映射的接口；
+  	即namespace配置的是接口的名称，一般一个映射文件映射（实现）一个接口，
+  	在运行过程中，mybatis的代理类会根据配置文件实现数据操作接口定义的数据库操作，
+  	（相当于mybatis编写了一个接口实现类）
+   -->
+ <mapper namespace="com.neuedu.mybatisdemo.dao.ICourceDao">
+ 	<!-- resultMap用于配置查询结果的映射关系 -->
+ 	<!-- id用于配置数据库主键列或唯一键列 -->
+ 	<!-- orm框架可以完成数据库表的列与java类的属性映射关系-object mapping对象映射，relation mapping关系映射 -->
+ 	<!-- <resultMap type="Cource" id="courceMap">
+ 	<id column = "cource_id" property="courceId"/>
+ 	<result column="cource_name" property="courceName"/> 
+ 	<result column="cource_score" property="courceScore"/> 
+ 	<result column="start_date" property="startDate"/> 
+ 	</resultMap> -->
+ 	<resultMap type="Cource" id="courceMap">
+ 		<id column = "cource_id" property="courceId"/>
+ 		<result column="cource_name" property="courceName"/> 
+ 		<result column="cource_score" property="courceScore"/> 
+ 		<result column="start_date" property="startDate"/> 
+ 		<!-- <collection property="students" ofType="Student">
+ 			<id column="id" property="id"/>
+ 			<result column="account" property="account"/>
+ 			<result column="password" property="password"/>
+ 			<result column="truename" property="truename"/>
+ 		</collection> -->
+ 	</resultMap>
+ 	<!-- 在接口映射文件中，使用select，insert，update，delete配置对应的sql脚本 -->
+ 	<!-- 在下面标签中，使用id配置接口的方法名称，resultMap用于配置自定义的结果映射关系 -->
+ 	<!-- 使用resultType进行查询结果映射时，如果表的列名与类的属性的名称相同可以直接进行映射，如果不同可以使用列别名转换成相同进行映射 -->
+ 	<!-- 查询课程对应的选课人员 -->
+ 	<sql id="fromLsql">
+ 		cource c left outer join tab_student_cource t on c.cource_id = t.cource_id
+       left outer join student1 s on t.student_id = s.id
+ 	</sql>
+ 	
+ 	<sql id="courceCloumn">cource_id as courceId,cource_name courceName,
+ 		cource_score courceScore,start_date startDate</sql>
+ 	<select id="findAll" resultMap="courceMap">
+ 		<!-- select <include refid="courceCloumn"></include> from cource -->
+ 		select c.*,s.* from
+ 			<include refid="fromLsql"></include>
+ 	</select>
+ 	<!-- 注意使用mybatis进行配置以后，id不能重名，即接口方法不能重载 -->
+ 	<!-- 如果接口方法有参数，需要使用parameterType配置参数类型，
+ 	如果有多个参数使用parameterMap进行配置或使用对象类型进行配置（原始数据类型或对象数据类型）（集合类型） -->
+ 	
+ 	<select id="findById" resultMap="courceMap" parameterType="String"> 
+ 	<!-- 可以使用#{} 获取参数值 -->
+ 		select * from cource where cource_id=#{id}
+ 	</select>
+ 	
+ 	<insert id="addCource" parameterType="Cource">
+ 		<!-- insert into cource(cource_id,cource_name,cource_score,start_date) 
+ 		values(#{courceId},#{courceName},#{courceScore},sysdate) -->
+ 		<!-- 新增修改数据时使用指定时间-->
+ 		insert into cource(cource_id,cource_name,cource_score,start_date) 
+ 		values(#{courceId},#{courceName},#{courceScore},#{startDate})
+ 	</insert>
+ 	
+ 	<!-- <update id="updateCource" parameterType="Cource">
+ 		update cource set cource_name=#{courceName},
+ 		cource_score=#{courceScore},start_date=sysdate where cource_id=#{courceId}
+ 	</update> -->
+ 	<update id="beatuchUpdate" parameterType="java.util.List">  
+    UPDATE cource SET cource_score = 8 WHERE cource_id IN  
+    <foreach collection="list" item="item" index="index" open="(" separator="," close=")" >  
+        #{item}  
+    </foreach>  
+	</update> 
+ 	
+ 	<!-- 某些情况下parameterType也可以省略 -->
+ 	<delete id="deleteCource" parameterType="String">
+ 	<!-- public void deleteCource(String id);只有一个参数时命名可以任意id-->
+ 		delete cource where cource_id=#{id}
+ 	</delete>
+ 	
+ 	<!-- 
+ 	<select  id="searchByDate" parameterType="Cource" resultMap="courceMap">
+ 		select * from cource where start_date >#{startDate}
+ 	</select> -->
+ 	<select  id="searchByDate" parameterType="Cource" resultMap="courceMap">
+ 		select * from cource where to_char(start_date,'yyyy-MM-dd') = to_char(#{startDate},'yyyy-MM-dd')
+ 	</select>
+ 	
+ 	<select id="searchByExample" parameterType="Cource" resultMap="courceMap">
+ 		select * from cource where 1=1
+ 		<!-- 动态sql编程 -->
+ 		<!-- 方法1 -在传参是传递匹配规则，取参时直接获取参数 -->
+ 		<!-- <if test="courceName != null"> and cource_name like #{courceName}</if> -->
+ 		<!-- 方法二-在传参时没有用传递匹配规则，则取出时需要拼接匹配规则，使用了${}实现字符串替换，此方法不安全尽量避免使用，
+ 		容易导致sql注入攻击，即在传入的字符串中存在sql语句导致查询结果变化-->
+ 		<!-- <if test="courceName != null"> and cource_name like '%${courceName}%'</if> -->
+ 		<!-- 把传进来的courceName使用concat('%',#{cource})在前面加上一个%然后在使用concat在末尾添加一个% -->
+ 		<if test="courceName != null"> and cource_name like concat(concat('%',#{courceName}),'%')</if>
+ 		<if test="startDate != null"> and start_date >  #{startDate}</if>
+ 	</select>
+ 	<select id="searchByPage" parameterType="Pager" resultMap="courceMap">
+ 	<!-- sql中不允许出现小于符号，解决方法1：使用转译符号进行代替  -->
+ 	select * from(         
+	select rownum rn,m.* 
+	from (select * from cource c where 1=1
+	
+	<!-- <choose>
+		<when test="courceName != null">
+			 and cource_name like concat(concat('%',#{courceName}),'%')
+		</when>
+		<when test="startDate != null">
+			and start_date <![CDATA[>]]>#{startDate}
+		</when>
+		<when test="courceScore != null">
+			and cource_score &gt;#{courceScore}
+		</when>
+		<otherwise>
+		</otherwise>
+	</choose> -->
+	
+	<!-- 根据课程名称进行模糊查询 -->
+	<if test="cource.courceName != null">and cource_name like concat(concat('%',#{cource.courceName}),'%')</if>
+	<!-- 根据开课时间大于搜索时间进行查询 -->
+	<if test="cource.startDate != null">and start_date <![CDATA[>]]>#{cource.startDate}</if>
+	<!-- 根据课程学分大于搜索学分进行查询 -->
+	<if test="cource.courceScore != null">and cource_score &gt;#{cource.courceScore}</if>
+         order by cource_score DESC) m
+         <!-- 使用映射功能，查找get方法 -->
+ 		where rownum &lt;=#{end}) 
+  	where rn &gt;#{begin}
+ 	</select>
+ 	<!-- 作业:根据课程名称进行模糊搜索，开课时间大于搜索时间，学分大于搜索学分进行搜索数据，并进行分页； -->
+ 	
+ 	
+ </mapper>
+  
+  
